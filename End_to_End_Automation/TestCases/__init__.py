@@ -1,0 +1,2 @@
+from . import test_TestCase1_Registration_Form
+from . import test_TestCase2_Registration_Invalid_Data

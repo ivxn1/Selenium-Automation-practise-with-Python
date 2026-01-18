@@ -1,0 +1,27 @@
+INFO:__main__:This is info
+WARNING:__main__:There is a delay
+DEBUG:selenium.webdriver.common.selenium_manager:Selenium Manager binary found at: /Users/ivanzhelev/playright-python-learning/.venv/lib/python3.13/site-packages/selenium/webdriver/common/macos/selenium-manager
+DEBUG:selenium.webdriver.common.selenium_manager:Executing process: /Users/ivanzhelev/playright-python-learning/.venv/lib/python3.13/site-packages/selenium/webdriver/common/macos/selenium-manager --browser firefox --debug --language-binding python --output json
+DEBUG:selenium.webdriver.common.selenium_manager:Sending stats to Plausible: Props { browser: "firefox", browser_version: "", os: "macos", arch: "arm64", lang: "python", selenium_version: "4.39" }
+DEBUG:selenium.webdriver.common.selenium_manager:geckodriver not found in PATH
+DEBUG:selenium.webdriver.common.selenium_manager:firefox detected at /Applications/Firefox.app/Contents/MacOS/firefox
+DEBUG:selenium.webdriver.common.selenium_manager:Running command: /Applications/Firefox.app/Contents/MacOS/firefox -v
+DEBUG:selenium.webdriver.common.selenium_manager:Output: "Mozilla Firefox 146.0.1"
+DEBUG:selenium.webdriver.common.selenium_manager:Detected browser: firefox 146.0.1
+DEBUG:selenium.webdriver.common.selenium_manager:Valid geckodriver versions for firefox 146: ["0.36.0", "0.35.0", "0.34.0"]
+DEBUG:selenium.webdriver.common.selenium_manager:Required driver: geckodriver 0.36.0
+DEBUG:selenium.webdriver.common.selenium_manager:geckodriver 0.36.0 already in the cache
+DEBUG:selenium.webdriver.common.selenium_manager:Driver path: /Users/ivanzhelev/.cache/selenium/geckodriver/mac-arm64/0.36.0/geckodriver
+DEBUG:selenium.webdriver.common.selenium_manager:Browser path: /Applications/Firefox.app/Contents/MacOS/firefox
+DEBUG:selenium.webdriver.common.service:Started executable: `/Users/ivanzhelev/.cache/selenium/geckodriver/mac-arm64/0.36.0/geckodriver` in a child process with pid: 38425 using 0 to output -3
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65314/session {'capabilities': {'firstMatch': [{}], 'alwaysMatch': {'browserName': 'firefox', 'acceptInsecureCerts': True, 'moz:debuggerAddress': True, 'pageLoadStrategy': <PageLoadStrategy.normal: 'normal'>, 'browserVersion': None, 'moz:firefoxOptions': {'binary': '/Applications/Firefox.app/Contents/MacOS/firefox', 'prefs': {'remote.active-protocols': 1}}}}}
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:65314
+DEBUG:urllib3.connectionpool:http://localhost:65314 "POST /session HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":{"sessionId":"f0858aef-5fbf-4fd0-b14e-17837b244ece","capabilities":{"acceptInsecureCerts":true,"browserName":"firefox","browserVersion":"146.0.1","moz:accessibilityChecks":false,"moz:buildID":"20251217121356","moz:geckodriverVersion":"0.36.0","moz:headless":false,"moz:platformVersion":"25.2.0","moz:processID":38426,"moz:profile":"/var/folders/7g/ccdm9yq17jn78xqls265stg00000gn/T/rust_mozprofilejAggtC","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"pageLoadStrategy":"normal","platformName":"mac","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:146.0) Gecko/20100101 Firefox/146.0"}}} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '812', 'date': 'Mon, 12 Jan 2026 15:46:32 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+DEBUG:selenium.webdriver.remote.remote_connection:POST http://localhost:65314/session/f0858aef-5fbf-4fd0-b14e-17837b244ece/url {'url': 'https://www.thetestingworld.com/testings/'}
+DEBUG:urllib3.connectionpool:http://localhost:65314 "POST /session/f0858aef-5fbf-4fd0-b14e-17837b244ece/url HTTP/1.1" 200 0
+DEBUG:selenium.webdriver.remote.remote_connection:Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-cache', 'content-length': '14', 'date': 'Mon, 12 Jan 2026 15:46:36 GMT'})
+DEBUG:selenium.webdriver.remote.remote_connection:Finished Request
+INFO:__main__:This is info
+WARNING:__main__:There is a delay
