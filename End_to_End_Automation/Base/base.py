@@ -2,7 +2,7 @@ from selenium.webdriver import Chrome
 from selenium.webdriver import Firefox
 from Selenium_Automation.End_to_End_Automation.Library import ConfigReader
 
-def open_browser():
+def open_browser(url='https://www.thetestingworld.com/testings/index.php'):
     global browser
 
     if (ConfigReader.read_config('Details', 'browser')).lower() == 'chrome':
@@ -12,7 +12,7 @@ def open_browser():
     else:
         browser = Chrome()
 
-    browser.get('https://www.thetestingworld.com/testings/index.php')
+    browser.get(url)
     browser.maximize_window()
     return browser
 
